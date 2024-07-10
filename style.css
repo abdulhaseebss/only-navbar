@@ -73,9 +73,11 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 250px;
+    height: 220px;
     border-radius: 18px;
     box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.151);
     transition: 800ms;
+    cursor: pointer;
 }
 
 .card-div img {
@@ -101,12 +103,19 @@ body {
     gap: 20px;
 }
 
+.p-link{
+    text-align: center;
+    padding: 20px;
+}
+
 
 .flex-div {
     display: flex;
     gap: 35px;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .flex-div2{
     display: flex;
@@ -306,7 +315,20 @@ body {
   box-shadow: 4px 4px 5px 1px rgba(151, 151, 151, 0.349);
 }
 
-
+.card-div .arrow-img{
+    height: 50px;
+    /* background: #942b2b; */
+    box-shadow: 0px 0px 8px 0px rgba(128, 128, 128, 0.301);
+    border-radius: 50%;
+    width: 50px;
+    padding: 10px;
+    color: #fff;
+}
+.arrow-img-prent{
+    display: flex;
+    justify-content: center;
+    
+}
 .tab-content {
     /* height: auto; */
   padding: 20px;
@@ -321,9 +343,9 @@ body {
     justify-content: center;
     align-items: center;
     overflow-y: scroll;
-    height: 38rem;
+    height: 76vh;
     padding-bottom: 10px;
-    padding: 30px;
+    /* padding: 30px; */
 }
 .card {
   /* overflow: hidden; */
@@ -388,6 +410,7 @@ body {
 @media (max-width: 600px) {
     .card-div{
         width: 80vw;
+        height: 30vh;
     }
     .card-div img{
         width: 100%;
