@@ -43,9 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
             backBtn.style.display = "block"
             closeIcon.style.display = "none"
 
-            if (attr) {
-                
-            }
+           
         })
     })
 
@@ -70,24 +68,42 @@ document.addEventListener('DOMContentLoaded', function() {
     // Event listeners for each navigation item
     inspiredBtn.addEventListener('click', function() {
         toggleDropdown(inspiredBtn, inspiredContent);
+        inspiredBtn.style.fontWeight = '600'
+
+        planBtn.style.fontWeight = '400'
+        thingsBtn.style.fontWeight = '400'
+        placesBtn.style.fontWeight = '400'
     });
 
     placesBtn.addEventListener('click', function() {
         toggleDropdown(placesBtn, placesContent);
+        placesBtn.style.fontWeight = '600'
+        planBtn.style.fontWeight = '400'
+        thingsBtn.style.fontWeight = '400'
+        inspiredBtn.style.fontWeight = '400'
     });
 
     thingsBtn.addEventListener('click', function() {
         toggleDropdown(thingsBtn, thingsContent);
+        thingsBtn.style.fontWeight = '600'
+        planBtn.style.fontWeight = '400'
+        placesBtn.style.fontWeight = '400'
+        inspiredBtn.style.fontWeight = '400'
     });
 
     planBtn.addEventListener('click', function() {
         toggleDropdown(planBtn, planContent);
+        planBtn.style.fontWeight = '600'
+        thingsBtn.style.fontWeight = '400'
+        placesBtn.style.fontWeight = '400'
+        inspiredBtn.style.fontWeight = '400'
     });
 
     // Clicking anywhere outside the nav or dropdowns should close all dropdowns
     document.addEventListener('click', function(event) {
         const isNavClick = event.target.closest('.nav');
         const isDropdownContentClick = event.target.closest('.dropdown-content-Inspired, .dropdown-content-Places, .dropdown-content-Things, .dropdown-content-Plan');
+       
 
         if (!isNavClick && !isDropdownContentClick) {
             hideAllDropdowns();
