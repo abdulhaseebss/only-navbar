@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const placesBtn = document.getElementById('placesBtn');
     const thingsBtn = document.getElementById('thingsBtn');
     const planBtn = document.getElementById('planBtn');
+    const downIcon = document.querySelectorAll('.down-icon');
     const headDivBtns = document.querySelectorAll('.heads-div button')
     const backBtn = document.getElementById('backBtn');
     const closeIcon = document.getElementById('closeIcon');
@@ -37,11 +38,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const attr = e.target.dataset.btnNav
             const cardsDiv = document.querySelector(`[data-nav="${attr}"]`);
-            console.log(cardsDiv);
             navigationScreen.classList.add('show')
             cardsDiv.style.display = 'flex'
             backBtn.style.display = "block"
             closeIcon.style.display = "none"
+
+            const tabContainer = cardsDiv.querySelector('.tabs');
+
+            if(tabContainer) {
+                tabContainer.firstElementChild.classList.add('active');
+                cardsDiv.querySelector('.tab-content').style.display = 'block'
+            }
 
            
         })
@@ -57,46 +64,87 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to toggle dropdown visibility
     function toggleDropdown(btn, content) {
+        document.querySelectorAll('.heads').forEach(head => {
+            head.style.fontWeight = '400';
+            head.firstElementChild.style.transform ="rotate(0deg)"
+        })
         if (content.style.display === 'block') {
             content.style.display = 'none';
+            btn.firstElementChild.style.transform ="rotate(0deg)"
+            btn.style.fontWeight = '400'
         } else {
             hideAllDropdowns();
+
+            
             content.style.display = 'block';
+
+            const tabSection = content.querySelector('.tabs');
+            console.log(tabSection);
+            if (tabSection) {
+                tabSection.firstElementChild.classList.add('active');
+                content.querySelector('.tab-content').style.display = 'block'
+            }
+
+            btn.firstElementChild.style.transform ="rotate(180deg)"
+            btn.style.fontWeight = '600'
         }
     }
 
     // Event listeners for each navigation item
     inspiredBtn.addEventListener('click', function() {
+        
         toggleDropdown(inspiredBtn, inspiredContent);
-        inspiredBtn.style.fontWeight = '600'
-
-        planBtn.style.fontWeight = '400'
-        thingsBtn.style.fontWeight = '400'
-        placesBtn.style.fontWeight = '400'
+        // inspiredBtn.firstElementChild.style.transform ="rotate(180deg)"
+        // planBtn.firstElementChild.style.transform ="rotate(0deg)"
+        // thingsBtn.firstElementChild.style.transform ="rotate(0deg)"
+        // placesBtn.firstElementChild.style.transform ="rotate(0deg)"
+        
+        // inspiredBtn.style.fontWeight = '600'
+        // planBtn.style.fontWeight = '400'
+        // thingsBtn.style.fontWeight = '400'
+        // placesBtn.style.fontWeight = '400'
     });
 
     placesBtn.addEventListener('click', function() {
         toggleDropdown(placesBtn, placesContent);
-        placesBtn.style.fontWeight = '600'
-        planBtn.style.fontWeight = '400'
-        thingsBtn.style.fontWeight = '400'
-        inspiredBtn.style.fontWeight = '400'
+        // inspiredBtn.firstElementChild.style.transform ="rotate(0deg)"
+        // planBtn.firstElementChild.style.transform ="rotate(0deg)"
+        // thingsBtn.firstElementChild.style.transform ="rotate(0deg)"
+        // placesBtn.firstElementChild.style.transform ="rotate(180deg)"
+
+
+        // placesBtn.style.fontWeight = '600'
+        // planBtn.style.fontWeight = '400'
+        // thingsBtn.style.fontWeight = '400'
+        // inspiredBtn.style.fontWeight = '400'
     });
 
     thingsBtn.addEventListener('click', function() {
         toggleDropdown(thingsBtn, thingsContent);
-        thingsBtn.style.fontWeight = '600'
-        planBtn.style.fontWeight = '400'
-        placesBtn.style.fontWeight = '400'
-        inspiredBtn.style.fontWeight = '400'
+        // inspiredBtn.firstElementChild.style.transform ="rotate(0deg)"
+        // planBtn.firstElementChild.style.transform ="rotate(0deg)"
+        // thingsBtn.firstElementChild.style.transform ="rotate(180deg)"
+        // placesBtn.firstElementChild.style.transform ="rotate(0deg)"
+
+
+        // thingsBtn.style.fontWeight = '600'
+        // planBtn.style.fontWeight = '400'
+        // placesBtn.style.fontWeight = '400'
+        // inspiredBtn.style.fontWeight = '400'
     });
 
     planBtn.addEventListener('click', function() {
         toggleDropdown(planBtn, planContent);
-        planBtn.style.fontWeight = '600'
-        thingsBtn.style.fontWeight = '400'
-        placesBtn.style.fontWeight = '400'
-        inspiredBtn.style.fontWeight = '400'
+        // inspiredBtn.firstElementChild.style.transform ="rotate(0deg)"
+        // planBtn.firstElementChild.style.transform ="rotate(180deg)"
+        // thingsBtn.firstElementChild.style.transform ="rotate(0deg)"
+        // placesBtn.firstElementChild.style.transform ="rotate(0deg)"
+
+
+        // planBtn.style.fontWeight = '600'
+        // thingsBtn.style.fontWeight = '400'
+        // placesBtn.style.fontWeight = '400'
+        // inspiredBtn.style.fontWeight = '400'
     });
 
     // Clicking anywhere outside the nav or dropdowns should close all dropdowns

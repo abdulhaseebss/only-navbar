@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+  <script>
+    function toggleSearchInput() {
+      // console.log("chal raha he");
+      const searchInput = document.getElementById('searchInput');
+      const closeIconSearch = document.getElementById('closeIcon-search');
+      if (searchInput.style.display === '' || searchInput.style.display === 'none') {
+        searchInput.style.display = 'block';
+      } else {
+        searchInput.style.display = 'none' ;
+      }
 
+    }
+
+    function closeSearchModal() {
+      if (searchInput.style.display === '' || searchInput.style.display === 'block') {
+         searchInput.style.display = 'none'
+    }
+    }
+  </script>
+  
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,28 +33,46 @@
     <img class="hamburger-logo" id="hamburgerIcon" src="./assets/menu-outline.svg" width="30px" alt="hamburger">
     <img class="close-icon" id="closeIcon" src="./assets/dt-icon-close.svg" alt="close" style="display: none;">
     <p id="backBtn" style="display: none; cursor: pointer;"> < Back</p>
-    <img width="130" src="./assets/logo.svg" alt="logo">
+    <img width="130" src="./assets/logo.svg" alt="logo" style="cursor: pointer;">
     <div class="main-nav-btns">
       <div class="dropdown">
-        <p class="heads" id="inspiredBtn">Be Inspired <img src="./assets/dt-icon-chevron-down.svg" alt="down"></p>
-        <p class="heads" id="placesBtn">Places to go <img src="./assets/dt-icon-chevron-down.svg" alt="down"></p>
-        <p class="heads" id="thingsBtn">Things to do <img src="./assets/dt-icon-chevron-down.svg" alt="down"></p>
-        <p class="heads" id="planBtn">Plan your trip <img src="./assets/dt-icon-chevron-down.svg" alt="down"></p>
+        <p class="heads" id="inspiredBtn">Be Inspired <img src="./assets/dt-icon-chevron-down.svg" class="down-icon" alt="down"></p>
+        <p class="heads" id="placesBtn">Places to go <img src="./assets/dt-icon-chevron-down.svg" class="down-icon" alt="down"></p>
+        <p class="heads" id="thingsBtn">Things to do <img src="./assets/dt-icon-chevron-down.svg" class="down-icon" alt="down"></p>
+        <p class="heads" id="planBtn">Plan your trip <img src="./assets/dt-icon-chevron-down.svg" class="down-icon" alt="down"></p>
       </div>
     </div>
-    <div class="icons-btn ">
+    <!-- <div class="icons-btn ">
       <img class="search-icon-hidden" style="display: none;" src="./assets/dt-icon-map.svg" alt="icons">
       <img class="search-icon-hidden" style="display: none;" src="./assets/dt-icon-heart.svg" alt="icons">
       <img  src="./assets/dt-icon-search.svg" alt="icons">
+    </div> -->
+    <div style="cursor: pointer;" onclick="toggleSearchInput()">
+      <img src="./assets/dt-icon-search.svg" alt="icons">
     </div>
+
+    <div class="search-input-modal" id="searchInput" style=" display: none; transition: 300ms;">
+      <div class="close-icon-right">
+        <div class="close-icon-search" style="cursor: pointer;" id="closeIcon-search">
+          <img onclick="closeSearchModal()"  src="./assets/dt-icon-close.svg" alt="close">
+        </div>
+      </div>
+      <div class="search-input-center">
+        <div class="search-input">
+          <input type="text" class="" placeholder="Search "><img width="20px" src="./assets/dt-icon-search.svg" alt="icons">
+        </div>
+      </div>
+
+    </div>
+    
   </nav>
 
   <div class="responsive-btns " id="responsiveMenu">
     <div class="flex-div2 ">
 
-      <div class="search-input">
+      <!-- <div class="search-input">
         <input type="text" class="" placeholder="Search "><img width="20px" src="./assets/dt-icon-search.svg" alt="icons">
-      </div>
+      </div> -->
       <div class="heads-div">
         <button data-btn-nav="Be Inspired">Be Inspired <img src="./assets/dt-icon-chevron-right.svg" alt="right arrow"></button>
         <button data-btn-nav="Places to go">Places to go <img src="./assets/dt-icon-chevron-right.svg" alt="right arrow"></button>
@@ -51,17 +88,19 @@
     <div data-nav="Be Inspired" style="display:none;">
 
       <div class="cards">
+
+
         <div class="flex-div ">
-          <a class="card-div" href="#" target="_blank">
-            <img src="./assets/cards/be inspired/1.webp" alt="card image" >
-            <p>Australia Recommends 2024</p>
-          </a>
+          <div class="card-div">
+            <img src="./assets/cards/be inspired/1.webp" alt="card image">
+            <a href="#" class="p-link">Australia Recommends 2024</a>
+          </div>
         </div>
         <div class="flex-div ">
-          <a class="card-div" href="#">
+          <div class="card-div">
             <img src="./assets/cards/be inspired/2.webp" alt="card image">
-            <p>Come and Say G'day</p>
-          </a>
+            <a href="#" class="p-link">Come and Say G'day</a>
+          </div>
         </div>
         <div class="flex-div ">
           <div class="card-div">
