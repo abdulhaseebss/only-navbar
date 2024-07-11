@@ -455,11 +455,31 @@ a{
 
 
 @media only screen and (max-width: 740px) {
+
+    .tabs::-webkit-scrollbar {
+        height: 12px; /* Horizontal scrollbar height */
+      }
+      
+      .tabs::-webkit-scrollbar-track {
+        background: #fff; /* Track color */
+      }
+      
+      .tabs::-webkit-scrollbar-thumb {
+        background: #fff; /* Handle color */
+      }
+      
+      .tabs::-webkit-scrollbar-thumb:hover {
+        background: #fff; /* Handle color on hover */
+      }
+      
+
     .tabs {
         justify-content: flex-start;
-        overflow-x: hidden;
+        overflow-x: scroll;
         width: 80vw;
         padding-inline: 0.8rem;
+        scrollbar-width: thin; /* Makes scrollbar thin */
+        scrollbar-color: #ededee #f1f1f1; /* Handle color and track color */
     }
 }
 @media (max-width: 600px) {
