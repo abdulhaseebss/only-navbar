@@ -217,7 +217,7 @@ body {
     transform: translateX(100%);
     opacity: 0;
     transition: 0.5s all;
-    padding: 2rem;
+    padding-top: 2rem;
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -387,7 +387,7 @@ body {
     overflow-y: scroll;
     height: 78vh;
     padding-bottom: 10vh;
-    /* padding: 30px; */
+    padding: 10px;
     width: 100vw;
 }
 .card {
@@ -459,8 +459,8 @@ body {
 }
 @media (max-width: 600px) {
     .card-div{
-        width: 80vw;
-        height: 250px;
+        width: 40vw;
+        /* height: 180px; */
     }
     .card-div img{
         width: 100%;
@@ -478,6 +478,16 @@ body {
     }
     .tabs-container {
         width: 400px;
+    }
+    .cards{
+        gap: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+@media (max-width: 450px) {
+    .card-div{
+        width: 35vw;
+        height: 180px;
     }
 }
 

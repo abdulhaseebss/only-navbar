@@ -74,10 +74,10 @@
         <input type="text" class="" placeholder="Search "><img width="20px" src="./assets/dt-icon-search.svg" alt="icons">
       </div> -->
       <div class="heads-div">
-        <button data-btn-nav="Be Inspired">Be Inspired <img src="./assets/dt-icon-chevron-right.svg" alt="right arrow"></button>
-        <button data-btn-nav="Places to go">Places to go <img src="./assets/dt-icon-chevron-right.svg" alt="right arrow"></button>
-        <button data-btn-nav="Things to do">Things to do <img src="./assets/dt-icon-chevron-right.svg" alt="right arrow"></button>
-        <button data-btn-nav="Plan your trip">Plan your trip <img src="./assets/dt-icon-chevron-right.svg" alt="right arrow"></button>
+        <button data-btn-nav="Be Inspired">Be Inspired <img data-btn-nav="Be Inspired" src="./assets/dt-icon-chevron-right.svg" alt="right arrow"></button>
+        <button data-btn-nav="Places to go">Places to go <img data-btn-nav="Places to go" src="./assets/dt-icon-chevron-right.svg" alt="right arrow"></button>
+        <button data-btn-nav="Things to do">Things to do <img data-btn-nav="Things to do" src="./assets/dt-icon-chevron-right.svg" alt="right arrow"></button>
+        <button data-btn-nav="Plan your trip">Plan your trip <img data-btn-nav="Plan your trip" src="./assets/dt-icon-chevron-right.svg" alt="right arrow"></button>
         <button data-btn-nav="Explore">Explore</button>
       </div>
       <!-- More card-divs as needed -->
@@ -88,8 +88,6 @@
     <div data-nav="Be Inspired" style="display:none;">
 
       <div class="cards">
-
-
         <div class="flex-div ">
           <div class="card-div">
             <img src="./assets/cards/be inspired/1.webp" alt="card image">
@@ -135,7 +133,7 @@
         <button class="nav-btn prev" onclick="scrollTabs('left')">&lt;</button>
 
         <div class="tabs">
-          <div class="tab active" onclick="selectTab(event, 'cities')">Cities</div>
+          <div class="tab" onclick="selectTab(event, 'cities')">Cities</div>
           <div class="tab" onclick="selectTab(event, 'states')">States</div>
           <div class="tab" onclick="selectTab(event, 'beaches')">Beaches</div>
           <div class="tab" onclick="selectTab(event, 'islands')">Islands</div>
@@ -150,7 +148,7 @@
         </div> -->
       </div>
 
-      <div class="tab-content" id="cities">
+      <div class="tab-content" id="cities" style="display:none;">
         <div class="cards">
           <div class="flex-div ">
             <div class="card-div">
@@ -192,6 +190,42 @@
               <img src="./assets/cards/places to go/cities/6.webp" alt="card image">
               <a href="#" class="p-link">Adelaide</a>
             </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/cities/7.webp" alt="card image">
+              <a href="#" class="p-link">Cairns</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/cities/8.webp" alt="card image">
+              <a href="#" class="p-link">Drawin</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/cities/9.webp" alt="card image">
+              <a href="#" class="p-link">Hobart</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/cities/10.webp" alt="card image">
+              <a href="#" class="p-link">Canberra</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <a class="card-div">
+              <div class="arrow-img-prent"> <img src="./assets/dt-icon-arrow-right.svg" class="arrow-img" alt="card image"></div>
+
+             <p>View more</p>
+            </a>
           </div>
 
 
@@ -244,6 +278,35 @@
               <a href="#" class="p-link">Tasmania</a>
             </div>
           </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/states/7.webp" alt="card image">
+              <a href="#" class="p-link">Victoria</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/states/8.webp" alt="card image">
+              <a href="#" class="p-link">Western Australia</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/states/9.webp" alt="card image">
+              <a href="#" class="p-link">External Territories</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <a class="card-div">
+              <div class="arrow-img-prent"> <img src="./assets/dt-icon-arrow-right.svg" class="arrow-img" alt="card image"></div>
+
+             <p>View more</p>
+            </a>
+          </div>
         </div>
       </div>
 
@@ -290,6 +353,42 @@
               <img src="./assets/cards/places to go/beaches/6.webp" alt="card image">
               <a href="#" class="p-link">Jervis Bay</a>
             </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/beaches/7.webp" alt="card image">
+              <a href="#" class="p-link">Port Douglas</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/beaches/8.webp" alt="card image">
+              <a href="#" class="p-link">Byron Bay</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/beaches/9.webp" alt="card image">
+              <a href="#" class="p-link">Ningaloo Reef</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/beaches/10.webp" alt="card image">
+              <a href="#" class="p-link">Airlie Beach</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <a class="card-div">
+              <div class="arrow-img-prent"> <img src="./assets/dt-icon-arrow-right.svg" class="arrow-img" alt="card image"></div>
+
+             <p>View more</p>
+            </a>
           </div>
         </div>
       </div>
@@ -338,6 +437,35 @@
               <a href="#" class="p-link">Tiwi Islands</a>
             </div>
           </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/islands/7.webp" alt="card image">
+              <a href="#" class="p-link">Phillip Island</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/islands/8.webp" alt="card image">
+              <a href="#" class="p-link">The Whitsundays</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/islands/9.webp" alt="card image">
+              <a href="#" class="p-link">Bruny Island</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <a class="card-div">
+              <div class="arrow-img-prent"> <img src="./assets/dt-icon-arrow-right.svg" class="arrow-img" alt="card image"></div>
+
+             <p>View more</p>
+            </a>
+          </div>
         </div>
       </div>
 
@@ -383,6 +511,27 @@
             <div class="card-div">
               <img src="./assets/cards/places to go/country/6.webp" alt="card image">
               <a href="#" class="p-link">Daylesford</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/country/7.webp" alt="card image">
+              <a href="#" class="p-link">McLaren Vale</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/country/8.webp" alt="card image">
+              <a href="#" class="p-link">Glass House Mountains</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/country/9.webp" alt="card image">
+              <a href="#" class="p-link">Mudgee</a>
             </div>
           </div>
         </div>
@@ -432,6 +581,27 @@
               <a href="#" class="p-link">Kakadu National Park</a>
             </div>
           </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/outback/7.webp" alt="card image">
+              <a href="#" class="p-link">Eyre Peninsula</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/outback/8.webp" alt="card image">
+              <a href="#" class="p-link">Karijini National Park</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/outback/9.webp" alt="card image">
+              <a href="#" class="p-link">Monkey Mia</a>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -478,6 +648,42 @@
               <img src="./assets/cards/places to go/nature/6.webp" alt="card image">
               <a href="#" class="p-link">Scenic Rim</a>
             </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/nature/7.webp" alt="card image">
+              <a href="#" class="p-link">Purnululu National Park</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/nature/8.webp" alt="card image">
+              <a href="#" class="p-link">Cradle Mountain-Lake St Clair National Park</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/nature/9.webp" alt="card image">
+              <a href="#" class="p-link">Litchfield National Park</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/nature/10.webp" alt="card image">
+              <a href="#" class="p-link">Freycinet</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <a class="card-div">
+              <div class="arrow-img-prent"> <img src="./assets/dt-icon-arrow-right.svg" class="arrow-img" alt="card image"></div>
+
+             <p>View more</p>
+            </a>
           </div>
         </div>
       </div>
@@ -675,7 +881,7 @@
         <button class="nav-btn prev" onclick="scrollTabs('left')">&lt;</button>
 
         <div class="tabs">
-          <div class="tab active" onclick="selectTab(event, 'planning-tools')">Planning tools</div>
+          <div class="tab" onclick="selectTab(event, 'planning-tools')">Planning tools</div>
           <div class="tab" onclick="selectTab(event, 'visas-and-entry')">Visas and entry</div>
           <div class="tab" onclick="selectTab(event, 'about-australia')">About australia</div>
           <div class="tab" onclick="selectTab(event, 'when-to-go')">When to go</div>
@@ -689,7 +895,7 @@
         </div> -->
       </div>
 
-      <div class="tab-content" id="planning-tools">
+      <div class="tab-content" id="planning-tools" style="display:none;">
         <div class="cards">
           <div class="flex-div ">
             <div class="card-div">
@@ -733,6 +939,56 @@
             </div>
           </div>
 
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/plan your trip/planning tools/7.webp" alt="card image">
+              <a href="#" class="p-link">Find a travel agent</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/plan your trip/planning tools/8.webp" alt="card image">
+              <a href="#" class="p-link">Find accommodation</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/plan your trip/planning tools/9.webp" alt="card image">
+              <a href="#" class="p-link">Find tours</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/plan your trip/planning tools/10.webp" alt="card image">
+              <a href="#" class="p-link">Find transport</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/plan your trip/planning tools/11.webp" alt="card image">
+              <a href="#" class="p-link">Visitor information centres</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/plan your trip/planning tools/12.webp" alt="card image">
+              <a href="#" class="p-link">Deals and travel packages</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <a class="card-div">
+              <div class="arrow-img-prent"> <img src="./assets/dt-icon-arrow-right.svg" class="arrow-img" alt="card image"></div>
+
+             <p>View more</p>
+            </a>
+          </div>
+
         </div>
       </div>
 
@@ -757,6 +1013,14 @@
               <img src="./assets/cards/plan your trip/visas/3.webp" alt="card image">
               <a href="#" class="p-link">Working Holiday Maker visas</a>
             </div>
+          </div>
+
+          <div class="flex-div ">
+            <a class="card-div">
+              <div class="arrow-img-prent"> <img src="./assets/dt-icon-arrow-right.svg" class="arrow-img" alt="card image"></div>
+
+             <p>View more</p>
+            </a>
           </div>
 
         </div>
@@ -807,6 +1071,28 @@
             </div>
           </div>
 
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/plan your trip/about australia/7.webp" alt="card image">
+              <a href="#" class="p-link">Cities, states & territories</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/plan your trip/about australia/8.webp" alt="card image">
+              <a href="#" class="p-link">Iconic places and attractions</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <a class="card-div">
+              <div class="arrow-img-prent"> <img src="./assets/dt-icon-arrow-right.svg" class="arrow-img" alt="card image"></div>
+
+             <p>View more</p>
+            </a>
+          </div>
+
         </div>
       </div>
 
@@ -848,6 +1134,14 @@
             </div>
           </div>
 
+          <div class="flex-div ">
+            <a class="card-div">
+              <div class="arrow-img-prent"> <img src="./assets/dt-icon-arrow-right.svg" class="arrow-img" alt="card image"></div>
+
+             <p>View more</p>
+            </a>
+          </div>
+
         </div>
       </div>
 
@@ -866,6 +1160,14 @@
               <img src="./assets/cards/plan your trip/getting here/2.webp" alt="card image">
               <a href="#" class="p-link">How long do I need for my trip to Australia?</a>
             </div>
+          </div>
+
+          <div class="flex-div ">
+            <a class="card-div">
+              <div class="arrow-img-prent"> <img src="./assets/dt-icon-arrow-right.svg" class="arrow-img" alt="card image"></div>
+
+             <p>View more</p>
+            </a>
           </div>
         
         </div>
@@ -909,6 +1211,14 @@
               <img src="./assets/cards/plan your trip/getting around/5.webp" alt="card image">
               <a href="#" class="p-link">How to plan an outback road trip</a>
             </div>
+          </div>
+
+          <div class="flex-div ">
+            <a class="card-div">
+              <div class="arrow-img-prent"> <img src="./assets/dt-icon-arrow-right.svg" class="arrow-img" alt="card image"></div>
+
+             <p>View more</p>
+            </a>
           </div>
         
         </div>
@@ -964,8 +1274,8 @@
       <div class="tabs-container">
         <!-- <button class="nav-btn prev" onclick="scrollTabs('left')">&lt;</button> -->
 
-        <div class="tabs" id="tabs-desk">
-          <div class="tab active" onclick="selectTab(event, 'citiesDeks')">Cities</div>
+        <div class="tabs" data-tab-type="desktop">
+          <div class="tab" onclick="selectTab(event, 'citiesDeks')">Cities</div>
           <div class="tab" onclick="selectTab(event, 'statesDeks')">States</div>
           <div class="tab" onclick="selectTab(event, 'beachesDeks')">Beaches</div>
           <div class="tab" onclick="selectTab(event, 'islandsDeks')">Islands</div>
@@ -980,7 +1290,7 @@
         </div> -->
       </div>
 
-      <div class="tab-content" id="citiesDeks">
+      <div class="tab-content" id="citiesDeks" style="display:none;" data-tab-type="desktop">
         <div class="flex-div">
           <div class="flex-div ">
             <div class="card-div">
@@ -1025,6 +1335,34 @@
           </div>
 
           <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/cities/7.webp" alt="card image">
+              <a href="#" class="p-link">Cairns</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/cities/8.webp" alt="card image">
+              <a href="#" class="p-link">Drawin</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/cities/9.webp" alt="card image">
+              <a href="#" class="p-link">Hobart</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/cities/10.webp" alt="card image">
+              <a href="#" class="p-link">Canberra</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
             <a class="card-div">
           <div class="arrow-img-prent"> <img src="./assets/dt-icon-arrow-right.svg" class="arrow-img" alt="card image"></div>
 
@@ -1034,7 +1372,7 @@
         </div>
       </div>
 
-      <div class="tab-content" id="statesDeks" style="display:none;">
+      <div class="tab-content" id="statesDeks" style="display:none;" data-tab-type="desktop">
         <div class="flex-div">
           <div class="flex-div ">
             <div class="card-div">
@@ -1079,6 +1417,27 @@
           </div>
 
           <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/states/7.webp" alt="card image">
+              <a href="#" class="p-link">Victoria</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/states/8.webp" alt="card image">
+              <a href="#" class="p-link">Western Australia</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/states/9.webp" alt="card image">
+              <a href="#" class="p-link">External Territories</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
             <a class="card-div">
           <div class="arrow-img-prent"> <img src="./assets/dt-icon-arrow-right.svg" class="arrow-img" alt="card image"></div>
 
@@ -1089,7 +1448,7 @@
       </div>
 
 
-      <div class="tab-content" id="beachesDeks" style="display:none;">
+      <div class="tab-content" id="beachesDeks" style="display:none;" data-tab-type="desktop">
         <div class="flex-div">
           <div class="flex-div ">
             <div class="card-div">
@@ -1134,6 +1493,34 @@
           </div>
 
           <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/beaches/7.webp" alt="card image">
+              <a href="#" class="p-link">Port Douglas</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/beaches/8.webp" alt="card image">
+              <a href="#" class="p-link">Byron Bay</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/beaches/9.webp" alt="card image">
+              <a href="#" class="p-link">Ningaloo Reef</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/beaches/10.webp" alt="card image">
+              <a href="#" class="p-link">Airlie Beach</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
             <a class="card-div">
           <div class="arrow-img-prent"> <img src="./assets/dt-icon-arrow-right.svg" class="arrow-img" alt="card image"></div>
               <p>View more</p>
@@ -1143,7 +1530,7 @@
       </div>
 
 
-      <div class="tab-content" id="islandsDeks" style="display:none;">
+      <div class="tab-content" id="islandsDeks" style="display:none;" data-tab-type="desktop">
         <div class="flex-div">
           <div class="flex-div ">
             <div class="card-div">
@@ -1188,6 +1575,27 @@
           </div>
 
           <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/islands/7.webp" alt="card image">
+              <a href="#" class="p-link">Phillip Island</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/islands/8.webp" alt="card image">
+              <a href="#" class="p-link">The Whitsundays</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/islands/9.webp" alt="card image">
+              <a href="#" class="p-link">Bruny Island</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
             <a class="card-div">
           <div class="arrow-img-prent"> <img src="./assets/dt-icon-arrow-right.svg" class="arrow-img" alt="card image"></div>
 
@@ -1198,7 +1606,7 @@
       </div>
 
 
-      <div class="tab-content" id="countryDeks" style="display:none;">
+      <div class="tab-content" id="countryDeks" style="display:none;" data-tab-type="desktop">
         <div class="flex-div">
           <div class="flex-div ">
             <div class="card-div">
@@ -1241,11 +1649,32 @@
               <a href="#" class="p-link">Daylesford</a>
             </div>
           </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/country/7.webp" alt="card image">
+              <a href="#" class="p-link">McLaren Vale</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/country/8.webp" alt="card image">
+              <a href="#" class="p-link">Glass House Mountains</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/country/9.webp" alt="card image">
+              <a href="#" class="p-link">Mudgee</a>
+            </div>
+          </div>
         </div>
       </div>
 
 
-      <div class="tab-content" id="outbackDeks" style="display:none;">
+      <div class="tab-content" id="outbackDeks" style="display:none;" data-tab-type="desktop">
         <div class="flex-div">
           <div class="flex-div ">
             <div class="card-div">
@@ -1288,11 +1717,32 @@
               <a href="#" class="p-link">Kakadu National Park</a>
             </div>
           </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/outback/7.webp" alt="card image">
+              <a href="#" class="p-link">Eyre Peninsula</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/outback/8.webp" alt="card image">
+              <a href="#" class="p-link">Karijini National Park</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/outback/9.webp" alt="card image">
+              <a href="#" class="p-link">Monkey Mia</a>
+            </div>
+          </div>
         </div>
       </div>
 
 
-      <div class="tab-content" id="natureDeks" style="display:none;">
+      <div class="tab-content" id="natureDeks" style="display:none;" data-tab-type="desktop">
         <div class="flex-div">
           <div class="flex-div ">
             <div class="card-div">
@@ -1336,6 +1786,34 @@
             </div>
           </div>
 
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/nature/7.webp" alt="card image">
+              <a href="#" class="p-link">Purnululu National Park</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/nature/8.webp" alt="card image">
+              <a href="#" class="p-link">Cradle Mountain-Lake St Clair National Park</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/nature/9.webp" alt="card image">
+              <a href="#" class="p-link">Litchfield National Park</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/places to go/nature/10.webp" alt="card image">
+              <a href="#" class="p-link">Freycinet</a>
+            </div>
+          </div>
+
 
           <div class="flex-div ">
             <a class="card-div">
@@ -1353,7 +1831,7 @@
       <div class="tabs-container">
         <!-- <button class="nav-btn prev" onclick="scrollTabs('left')">&lt;</button> -->
 
-        <div class="tabs " id="tabs-desk">
+        <div class="tabs " id="tabs-desk" data-tab-type="desktop">
           <div class="tab active" onclick="selectTab(event, 'culture2Desk')">Culture</div>
           <div class="tab" onclick="selectTab(event, 'adventure2Desk')">Adventure</div>
           <div class="tab" onclick="selectTab(event, 'nature2Desk')">Nature</div>
@@ -1368,7 +1846,7 @@
         </div> -->
       </div>
 
-      <div class="tab-content" id="culture2Desk">
+      <div class="tab-content" id="culture2Desk" data-tab-type="desktop">
         <div class="flex-div">
           <div class="flex-div ">
             <div class="card-div">
@@ -1401,7 +1879,7 @@
         </div>
       </div>
 
-      <div class="tab-content" id="adventure2Desk" style="display:none;">
+      <div class="tab-content" id="adventure2Desk" style="display:none;" data-tab-type="desktop">
         <div class="flex-div">
           <div class="flex-div ">
             <div class="card-div">
@@ -1428,7 +1906,7 @@
       </div>
 
 
-      <div class="tab-content" id="nature2Desk" style="display:none;">
+      <div class="tab-content" id="nature2Desk" style="display:none;" data-tab-type="desktop">
         <div class="flex-div">
           <div class="flex-div ">
             <div class="card-div">
@@ -1462,7 +1940,7 @@
       </div>
 
 
-      <div class="tab-content" id="relaxation2Desk" style="display:none;">
+      <div class="tab-content" id="relaxation2Desk" style="display:none;" data-tab-type="desktop">
         <div class="flex-div">
           <div class="flex-div ">
             <div class="card-div">
@@ -1482,7 +1960,7 @@
       </div>
 
 
-      <div class="tab-content" id="family2Desk" style="display:none;">
+      <div class="tab-content" id="family2Desk" style="display:none;" data-tab-type="desktop">
         <div class="flex-div">
           <div class="flex-div ">
             <div class="card-div">
@@ -1509,7 +1987,7 @@
       </div>
 
 
-      <div class="tab-content" id="backpacking2Desk" style="display:none;">
+      <div class="tab-content" id="backpacking2Desk" style="display:none;" data-tab-type="desktop">
         <div class="flex-div">
           <div class="flex-div ">
             <div class="card-div">
@@ -1540,8 +2018,8 @@
       <div class="tabs-container">
         <!-- <button class="nav-btn prev" onclick="scrollTabs('left')">&lt;</button> -->
 
-        <div class="tabs" id="tabs-desk">
-          <div class="tab active" onclick="selectTab(event, 'planning-toolsDesk')">Planning tools</div>
+        <div class="tabs" id="tabs-desk" data-tab-type="desktop">
+          <div class="tab" onclick="selectTab(event, 'planning-toolsDesk')">Planning tools</div>
           <div class="tab" onclick="selectTab(event, 'visas-and-entryDesk')">Visas and entry</div>
           <div class="tab" onclick="selectTab(event, 'about-australiaDesk')">About australia</div>
           <div class="tab" onclick="selectTab(event, 'when-to-goDesk')">When to go</div>
@@ -1555,7 +2033,7 @@
         </div> -->
       </div>
 
-      <div class="tab-content" id="planning-toolsDesk">
+      <div class="tab-content" id="planning-toolsDesk" style="display:none;" data-tab-type="desktop">
         <div class="flex-div">
           <div class="flex-div ">
             <div class="card-div">
@@ -1599,6 +2077,48 @@
             </div>
           </div>
 
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/plan your trip/planning tools/7.webp" alt="card image">
+              <a href="#" class="p-link">Find a travel agent</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/plan your trip/planning tools/8.webp" alt="card image">
+              <a href="#" class="p-link">Find accommodation</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/plan your trip/planning tools/9.webp" alt="card image">
+              <a href="#" class="p-link">Find tours</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/plan your trip/planning tools/10.webp" alt="card image">
+              <a href="#" class="p-link">Find transport</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/plan your trip/planning tools/11.webp" alt="card image">
+              <a href="#" class="p-link">Visitor information centres</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/plan your trip/planning tools/12.webp" alt="card image">
+              <a href="#" class="p-link">Deals and travel packages</a>
+            </div>
+          </div>
+
 
           <div class="flex-div ">
             <a class="card-div">
@@ -1610,7 +2130,7 @@
         </div>
       </div>
 
-      <div class="tab-content" id="visas-and-entryDesk" style="display:none;">
+      <div class="tab-content" id="visas-and-entryDesk" style="display:none;" data-tab-type="desktop">
         <div class="flex-div">
           <div class="flex-div ">
             <div class="card-div">
@@ -1645,7 +2165,7 @@
       </div>
 
 
-      <div class="tab-content" id="about-australiaDesk" style="display:none;">
+      <div class="tab-content" id="about-australiaDesk" style="display:none;" data-tab-type="desktop">
         <div class="flex-div">
           <div class="flex-div ">
             <div class="card-div">
@@ -1689,6 +2209,20 @@
             </div>
           </div>
 
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/plan your trip/about australia/7.webp" alt="card image">
+              <a href="#" class="p-link">Cities, states & territories</a>
+            </div>
+          </div>
+
+          <div class="flex-div ">
+            <div class="card-div">
+              <img src="./assets/cards/plan your trip/about australia/8.webp" alt="card image">
+              <a href="#" class="p-link">Iconic places and attractions</a>
+            </div>
+          </div>
+
 
           <div class="flex-div ">
             <a class="card-div">
@@ -1702,7 +2236,7 @@
       </div>
 
 
-      <div class="tab-content" id="when-to-goDesk" style="display:none;">
+      <div class="tab-content" id="when-to-goDesk" style="display:none;" data-tab-type="desktop">
         <div class="flex-div">
           <div class="flex-div ">
             <div class="card-div">
@@ -1751,7 +2285,7 @@
       </div>
 
 
-      <div class="tab-content" id="getting-hereDesk" style="display:none;">
+      <div class="tab-content" id="getting-hereDesk" style="display:none;" data-tab-type="desktop">
         <div class="flex-div">
           <div class="flex-div ">
             <div class="card-div">
@@ -1779,7 +2313,7 @@
       </div>
 
 
-      <div class="tab-content" id="getting-aroundDesk" style="display:none;">
+      <div class="tab-content" id="getting-aroundDesk" style="display:none;" data-tab-type="desktop">
         <div class="flex-div">
           <div class="flex-div ">
             <div class="card-div">

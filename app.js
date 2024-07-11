@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         backBtn.style.display = "none"
         closeIcon.style.display = "block"
+        document.querySelector(`[data-nav] .tabs`)
     })
 
     headDivBtns.forEach((btn) => {
@@ -34,7 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
             cardDivs.forEach((div) => {
                 div.style.display = 'none'
             })
-
 
             const attr = e.target.dataset.btnNav
             const cardsDiv = document.querySelector(`[data-nav="${attr}"]`);
@@ -60,6 +60,17 @@ document.addEventListener('DOMContentLoaded', function() {
         placesContent.style.display = 'none';
         thingsContent.style.display = 'none';
         planContent.style.display = 'none';
+
+        const tabSections = document.querySelectorAll('[data-tab-type="desktop"].tabs');
+
+        tabSections.forEach(el => {
+            el.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active')
+            })
+        })
+        document.querySelectorAll('[data-tab-type="desktop"].tab-content').forEach(el => {
+            el.style.display = 'none'
+        })
     }
 
     // Function to toggle dropdown visibility
@@ -74,7 +85,6 @@ document.addEventListener('DOMContentLoaded', function() {
             btn.style.fontWeight = '400'
         } else {
             hideAllDropdowns();
-
             
             content.style.display = 'block';
 
@@ -213,20 +223,23 @@ function selectTab(event, tabId) {
 
 // JavaScript for tab navigation scrolling
 function scrollTabs(direction) {
-    const tabsContainer = document.querySelector('.tabs');
-    const scrollAmount = 100; // Adjust as needed
+    const tabsContainers = document.querySelectorAll('.tabs');
+    tabsContainers.forEach((tabContainer) => {
 
-    if (direction === 'left') {
-        tabsContainer.scrollBy({
+        const scrollAmount = 100; // Adjust as needed
+        
+        if (direction === 'left') {
+            tabContainer.scrollBy({
             left: -scrollAmount,
             behavior: 'smooth'
         });
     } else if (direction === 'right') {
-        tabsContainer.scrollBy({
+        tabContainer.scrollBy({
             left: scrollAmount,
             behavior: 'smooth'
         });
     }
+})
 }
 
 
